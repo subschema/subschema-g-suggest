@@ -3,7 +3,7 @@ Subschema G Suggest
 This is a processor for using google location suggestion with subschema.
 
 ##Demo
-A simple demo can be found [here](http://jspears.github.io/subschema-g-suggest).
+A simple demo can be found [here](http://subschema.github.io/subschema-g-suggest).
 
 ##Installation
 

@@ -2,6 +2,7 @@
 #This script publishes the current p
 DIR=${PWD##*/}
 GH_DIR=${1:-"../${DIR}-gh-pages"}
+GH_REPO=${GH_REPO:-origin}
 
 OPWD=$PWD
 HASH=
@@ -35,7 +36,7 @@ function build(){
 
 function init_git() {
    echo "Initing git"
-   ORIGIN=$(git remote show -n origin | grep Fetch | sed 's,.*Fetch URL:,,') && \
+   ORIGIN=$(git remote show -n $GH_REPO | grep Fetch | sed 's,.*Fetch URL:,,') && \
    mkdir $GH_DIR &&\
    cd $GH_DIR &&\
    git init && \
