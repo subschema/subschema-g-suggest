@@ -5,6 +5,9 @@
   "main": "dist/index.js",
   "dependencies": {
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
     "babel-core": "^6.3.26",
