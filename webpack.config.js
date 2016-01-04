@@ -14,12 +14,6 @@ var config = {
         publicPath: '/',
         port:8081
     },
-    /*entry: {
-        'index': join('public/index.jsx')
-    },*/
-/*    output: {
-        filename: 'app.entry.js'
-    },*/
     resolve: {
         extensions: ['',  '.jsx', '.js'],
         alias: {
@@ -63,8 +57,6 @@ var config = {
             }]
 
     }
-
-
 };
 
 module.exports = config;
