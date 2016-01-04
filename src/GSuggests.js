@@ -18,7 +18,8 @@ var api = {
         return v == null ? null : v.label || v;
     }
 }
-function factoryFactory(google) {
+function factoryFactory(googleMaps, options) {
+    options = options || {};
     var autocompleteService = new googleMaps.places.AutocompleteService()
 
     api.fetch = function (url, value, component, cb) {
@@ -28,13 +29,12 @@ function factoryFactory(google) {
         }
 
         autocompleteService.getPlacePredictions({
-            input: search,
+            input: value,
             location: new googleMaps.LatLng(0, 0),
-            radius: suggestRadius,
+            radius: options.suggestRadius || 0,
         }, (googleSuggests) => {
             if (!googleSuggests) {
-                this.setState({suggests: []})
-                return
+                return []
             }
 
             cb(null, googleSuggests.map((suggest, key) => {
