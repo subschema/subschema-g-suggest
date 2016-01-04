@@ -4,7 +4,6 @@
   "description": "",
   "main": "dist/index.js",
   "dependencies": {
-    "react": "^0.14.5"
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
@@ -21,14 +20,13 @@
     "less-loader": "^2.2.2",
     "parse": "^1.6.13",
     "react-addons-css-transition-group": "^0.14.5",
+    "react": "^0.14.5",
     "react-dom": "^0.14.5",
     "react-transform-catch-errors": "^1.0.1",
     "react-transform-hmr": "^1.0.1",
-    "redbox-react": "^1.2.0",
     "scriptjs": "^2.5.8",
     "style-loader": "^0.13.0",
     "subschema": "^0.53.1",
-    "subschema-routing": "git+https://github.com/subschema/subschema-routing.git",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
