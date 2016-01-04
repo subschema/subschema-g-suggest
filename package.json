@@ -1,10 +1,9 @@
 {
   "name": "subschema-g-suggest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
