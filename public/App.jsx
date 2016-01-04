@@ -6,7 +6,7 @@ import GSuggests from '../src/GSuggests';
 /**
  * This adds the GSuggests Processor.
  */
-loader.addProcessor('GSuggests', GSuggests);
+loader.addProcessor('GSuggests', GSuggests());
 
 //A simple Schema for this configuration
 var schema = {
