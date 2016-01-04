@@ -7,7 +7,7 @@ var api = {
     },
     /**Value returns the value of the object, not necessarily whats in the input box**/
     value(obj){
-        return obj == null ? null : obj.val || obj;
+        return obj == null ? null : obj.address || obj;
     },
     /**
      * Format returns the format.
@@ -59,6 +59,11 @@ function factoryFactory(googleMaps, options) {
 
 function factory(options) {
     options = options || {};
+    if (!options.libraries) {
+        options.libraries = ['places'];
+    } else if (options.libraries.indexOf('places') < 0) {
+        options.libraries.push('places');
+    }
     if (typeof window.google === 'undefined') {
         window.googleMapsLoaded = () => {
             scriptjs.done('google-maps-places')

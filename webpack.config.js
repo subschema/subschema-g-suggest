@@ -14,14 +14,14 @@ var config = {
         publicPath: '/',
         port:8081
     },
-    entry: {
+    /*entry: {
         'index': join('public/index.jsx')
-    },
-    output: {
+    },*/
+/*    output: {
         filename: 'app.entry.js'
-    },
+    },*/
     resolve: {
-        extensions: ['', '.js', '.jsx'],
+        extensions: ['',  '.jsx', '.js'],
         alias: {
             'fbjs': join('node_modules/fbjs'),
             'react': join('node_modules/react'),
